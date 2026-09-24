@@ -23,27 +23,27 @@ Ensure you have the following installed on your machine:
 
 ### Clone the Repository
 
-git clone (https://github.com/natalymelnichuk/digital-bookshelf-api)
+* git clone (https://github.com/natalymelnichuk/digital-bookshelf-api)
 
-cd digital-bookshelf-api
+* cd digital-bookshelf-api
 
 ### Install Dependencies
 
-npm install
+* npm install
 
 ### Configure Environment Variables (.env)
 
 Create a .env file in the root directory based on the template below:
 
-PORT=3000
-MONGO_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/digital-bookshelf?retryWrites=true&w=majority
+* PORT=3000
+* MONGO_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/digital-bookshelf?retryWrites=true&w=majority
 
 ## API Endpoints
 
 Base URL: http://localhost:3000/api/books
 
-POST - /api/books
-GET - /api/books
-GET - /api/books/:id
-PUT - /api/books/:id
-DELETE - /api/books/:id
+* POST - /api/books
+* GET - /api/books
+* GET - /api/books/:id
+* PUT - /api/books/:id
+* DELETE - /api/books/:id
