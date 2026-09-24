@@ -55,7 +55,12 @@ router.get("/:id", fetchOneBook);
 async function updateBook (req, res) {
   try {
     const book = await Book.findByIdAndUpdate(req.params.id, req.body, { new: true, runValidators: true })
-    res.status(200).json({ message: "Book updated successfully!", book })
+    
+    if (!book) {
+      return res.status(404).json({ message: "Book not found" });
+    }
+
+    res.status(200).json(book);
   } catch(error) {
     console.error(error);
     res.status(400).json({ message: error.message })
